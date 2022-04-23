@@ -67,16 +67,17 @@
       <button>Apply Now</button>
     </section>
     <script>
-      let hour = prompt("What time is it?");
+      function goToPotugal() {
+        let country = prompt("What country are you from?");
+        let lcCountry = country.toLowerCase();
 
-      if (hour < 12) {
-        alert("Good morning");
+        if (lcCountry === "brazil" || lcCountry === "portugal") {
+          alert("You speak Portuguese");
+        } else {
+          alert("Go learn Portuguese!");
+        }
       }
-      if (hour > 18) {
-        alert("Good evening");
-      } else {
-        alert("Good afternoon");
-      }
+      goToPotugal();
     </script>
   </body>
 </html>
