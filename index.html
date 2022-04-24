@@ -64,20 +64,23 @@
         <strong> Limited amount of spots! </strong>
       </p>
       <br />
-      <button>Apply Now</button>
+      <button class="applybutton">Apply Now</button>
     </section>
     <script>
-      function goToPotugal() {
-        let country = prompt("What country are you from?");
-        let lcCountry = country.toLowerCase();
+      function welcome() {
+        let name = prompt("What is your name?");
+        let age = prompt("how old are you?");
 
-        if (lcCountry === "brazil" || lcCountry === "portugal") {
-          alert("You speak Portuguese");
+        if (age >= 18) {
+          let h1 = document.querySelector("h1");
+          h1.innerHTML = "Hi, " + name + "! Welcome to SheCodes!";
         } else {
-          alert("Go learn Portuguese!");
+          let h1 = document.querySelector("h1");
+          h1.innerHTML = "Sorry, " + name + "! You cannot join SheCodes";
         }
       }
-      goToPotugal();
+      let apply = document.querySelector(".applybutton");
+      apply.addEventListener("click", welcome);
     </script>
   </body>
 </html>
