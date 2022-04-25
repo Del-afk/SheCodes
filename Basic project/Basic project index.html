@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History</title>
+    <style>
+      body {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/032/711/original/Historical_Background_pic_preview.jpg?1650887335");
+        background-repeat: no-repeat;
+        background-size: 2200px;
+      }
+      .wraper {
+        height: 820px;
+        width: 600px;
+        margin: 30px auto;
+        background: linear-gradient(
+          180deg,
+          rgba(88, 94, 72, 0.19) 15%,
+          rgba(28, 32, 19, 0.731) 65%
+        );
+        padding: 20px;
+        border-radius: 10px;
+      }
+      hr {
+        width: 550px;
+      }
+      h1 {
+        margin: 0;
+        display: block;
+        text-align: center;
+        padding: 10px 0 10px 0;
+        border: 3px double rgba(135, 109, 83, 0.6);
+        border-radius: 14px;
+        font-family: monospace;
+        color: #383838;
+        font-weight: lighter;
+      }
+      h2 {
+        display: block;
+        text-align: center;
+        padding: 10px 0 10px 0;
+        border-radius: 14px;
+        font-family: monospace;
+        color: #383838;
+        font-weight: lighter;
+        font-size: large;
+      }
+      .histori {
+        display: block;
+        width: 550px;
+        height: auto;
+        margin: 0 auto;
+        border: 1px solid #7a6f6f;
+        border-radius: 20px;
+        box-shadow: -1px 7px 35px 5px rgba(0, 0, 0, 0.2);
+      }
+      p {
+        background-color: rgb(161 154 112 / 67%);
+        display: block;
+        text-align: justify;
+        padding: 10px 0 10px 0;
+        border-radius: 14px;
+        font-family: monospace;
+        color: #000000;
+        font-weight: 100;
+        font-size: 14px;
+        padding: 10px;
+        line-height: 18px;
+      }
+      a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 10px 0;
+        color: #fbe6ca;
+      }
+      .newsletter {
+        margin: 0 auto;
+        display: block;
+        box-shadow: 0px 1px 8px 1px #1c1b18;
+        background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+        background-color: #eae0c2;
+        border-radius: 16px;
+        border: 1px solid #333029;
+        cursor: pointer;
+        color: #505739;
+        font-family: Courier New;
+        font-size: 17px;
+        font-weight: bold;
+        padding: 13px 22px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #ffffff;
+        transition: all 200ms ease-in-out;
+      }
+      .newsletter:hover {
+        background: linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+        background-color: #ccc2a6;
+      }
+      .newsletter:active {
+        position: relative;
+        top: 1px;
+      }
+      .coded {
+        background-color: rgba(161, 154, 112, 0);
+        color: rgb(175, 174, 174);
+        font-family: monospace;
+        text-align: center;
+        font-size: 20px;
+        font-weight: lighter;
+        margin: 0;
+        padding: 20px;
+      }
+      .instagram {
+        display: inline;
+        color: rgb(175, 174, 174);
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wraper">
+      <h1>Welcome to History</h1>
+      <h2>Those who cannot remember the past are condemned to repeat it.</h2>
+      <hr />
+      <img
+        class="histori"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/032/709/original/History.jpg?1650886742"
+        alt="this is a historical map from ancient world."
+      />
+      <hr />
+      <p>
+        <em> History</em> (from Greek ἱστορία, historia, meaning "inquiry;
+        knowledge acquired by investigation") is the study and the documentation
+        of the past. Events before the invention of writing systems are
+        considered prehistory. "History" is an umbrella term comprising past
+        events as well as the memory, discovery, collection, organization,
+        presentation, and interpretation of these events. Historians seek
+        knowledge of the past using historical sources such as written
+        documents, oral accounts, art and material artifacts, and ecological
+        markers. <br />
+        <small
+          ><a href="https://en.wikipedia.org/wiki/History"
+            >want to ream more about history? click on me!
+          </a></small
+        >
+      </p>
+      <button class="newsletter">Join our newsletter</button>
+      <p class="coded">
+        coded with 💟 by
+        <em
+          ><a class="instagram" href="https://www.instagram.com/delaram_afk"
+            >@Del_AFK</a
+          ></em
+        >
+      </p>
+    </div>
+    <script>
+      function data() {
+        let name = prompt("hello, what is your name?");
+        let age = prompt(name + " how old are U?");
+
+        if (age < 18) {
+          alert("im not sure if this weblog is suit for you!");
+        } else if (age >= 18) {
+          alert(
+            "Dear " +
+              name +
+              " thank you for your subscribtion! we will be in touch!"
+          );
+        }
+      }
+      let buttonInfo = document.querySelector(".newsletter");
+      buttonInfo.addEventListener("click", data);
+    </script>
+  </body>
+</html>
