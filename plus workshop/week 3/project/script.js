@@ -23,8 +23,10 @@ let weather = {
 let output = "";
 let whitchCity = prompt("whitch City do you want to search?");
 if (typeof weather[whitchCity] !== "undefined") {
-  output = `in ${whitchCity} city the weather temp is ${weather[whitchCity].temp} and the humidity is ${weather[whitchCity].humidity}`;
+  output = `in ${whitchCity} city the weather temp is ${Math.round(
+    weather[whitchCity].temp
+  )} and the humidity is ${Math.round(weather[whitchCity].humidity)}`;
 } else {
-  output = `Sorry :( we dont have any data for ${whitchCity} city!`;
+  output = `Sorry :( we dont have any data for ${whitchCity} city! please check https://www.google.com/search?q=weather+${whitchCity}`;
 }
 alert(output);
