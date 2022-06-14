@@ -70,8 +70,8 @@ function changeCity(event) {
   let weatherStatus = document.getElementById("weatherstatus");
   degree.innerHTML = "loading";
   fetch(apiUrl)
-    .then((request) => {
-      return request.json();
+    .then((response) => {
+      return response.json();
     })
     .then((data) => {
       if (data.cod == 404) {
