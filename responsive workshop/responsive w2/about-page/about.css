@@ -1,33 +1,38 @@
-:root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  --main-font: "Abel";
-}
-.container {
-  width: 1500px;
-  height: auto;
+.navigation-con {
+  width: 85%;
   margin: 0 auto;
 }
-.wrapper {
+.about-part {
+  width: 85%;
   text-align: center;
+  margin: 50px auto 30px auto;
 }
-.nav-set {
-  font-family: "Abel", sans-serif;
-  font-size: 20px;
-  font-style: bl;
-}
-h1 {
-  margin: 0;
+.about-part h1 {
   font-size: 96px;
 }
-h2 {
-  font-size: 48px;
-  margin: 0;
-  margin-top: 5%;
-}
-h3 {
+.about-part h3 {
   font-size: 24px;
   opacity: 0.7;
-  margin: 0;
+}
+.about-part p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.slider-part {
+  width: 85%;
+  margin: 0 auto;
+}
+.email-part {
+  text-align: center;
+  margin: 0 auto;
+}
+.email-part h2 {
+  font-size: 48px;
+}
+.email-part a {
+  display: flex;
+  justify-content: center;
+  color: #6c63ff;
+  font-size: 28px;
+  text-decoration: none;
 }

@@ -31,9 +31,94 @@
       href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="about.css" />
     <title>about me</title>
   </head>
   <body>
-    
+    <div class="nav-part bg-light">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-light navigation-con">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Del Afk</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">About me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contactme">Contact me</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="about-part">
+      <h1>About me</h1>
+      <h3>Front-end developer from Tehran, Iran</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
+        aperiam provident tempora? Cumque adipisci, non dolorem quia, odit qui
+        alias veniam excepturi rem dolor fugit dignissimos, sed voluptatum
+        blanditiis harum.
+      </p>
+    </div>
+    <div class="slider-part">
+      <div class="row">
+        <div class="col-sm-4">
+          <img
+            src="../src/l3jP-yoga.png"
+            class="img-fluid p-2 shadow rounded"
+            alt="this is a project picture"
+          />
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="../src/jxM9-weather.png"
+            class="img-fluid p-2 shadow rounded"
+            alt="this is a project picture"
+          />
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="../src/WgM8-yogurt.png"
+            class="img-fluid p-2 shadow rounded"
+            alt="this is a project picture"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="contactme" class="email-part mt-5">
+      <h2>📮 Contact me</h2>
+      <a href="mailto:َaramafkhamird@gmail.com">Aramafkhamird@gmail.com</a>
+    </div>
   </body>
 </html>
