@@ -2,15 +2,19 @@
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --main-font: "Abel";
 }
-
-body {
-  margin: 60px auto;
-  max-width: 800px;
+.container {
+  width: 1500px;
+  height: auto;
+  margin: 0 auto;
 }
-
 .wrapper {
   text-align: center;
+}
+.nav-set {
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
 }
 h1 {
   margin: 0;
@@ -19,11 +23,16 @@ h1 {
 h2 {
   font-size: 48px;
   margin: 0;
+  margin-top: 5%;
 }
 h3 {
   font-size: 24px;
   opacity: 0.7;
   margin: 0;
+}
+.slider-div {
+  width: 70%;
+  margin: 0 auto;
 }
 .navigation-links {
   display: flex;
@@ -45,4 +54,25 @@ h3 {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+}
+.project-side {
+  margin: 0 auto;
+  margin-top: 3%;
+}
+.project-img {
+  width: 100%;
+}
+.lunch-key {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.project-p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.each-project {
+  margin-top: 30px;
 }
